@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetms.models;
+package com.kindsonthegenius.fleetapp.models;
 
 import java.util.Date;
 

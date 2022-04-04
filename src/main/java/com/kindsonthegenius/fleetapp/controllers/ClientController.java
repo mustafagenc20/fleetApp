@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetms.models.Client;
-import com.kindsonthegenius.fleetms.services.ClientService;
-import com.kindsonthegenius.fleetms.services.CountryService;
-import com.kindsonthegenius.fleetms.services.EmployeeTypeService;
-import com.kindsonthegenius.fleetms.services.JobTitleService;
-import com.kindsonthegenius.fleetms.services.StateService;
+import com.kindsonthegenius.fleetapp.models.Client;
+import com.kindsonthegenius.fleetapp.services.ClientService;
+import com.kindsonthegenius.fleetapp.services.CountryService;
+import com.kindsonthegenius.fleetapp.services.EmployeeTypeService;
+import com.kindsonthegenius.fleetapp.services.JobTitleService;
+import com.kindsonthegenius.fleetapp.services.StateService;
 
 @Controller
 public class ClientController {
