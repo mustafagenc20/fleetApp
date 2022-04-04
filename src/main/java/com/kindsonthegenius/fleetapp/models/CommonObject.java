@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @MappedSuperclass
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class CommonObject extends com.kindsonthegenius.fleetms.models.Auditable<String> {
+public class CommonObject extends com.kindsonthegenius.fleetapp.models.Auditable<String> {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
