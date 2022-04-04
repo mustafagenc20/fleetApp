@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetms.models.JobTitle;
-import com.kindsonthegenius.fleetms.services.JobTitleService;
+import com.kindsonthegenius.fleetapp.models.JobTitle;
+import com.kindsonthegenius.fleetapp.services.JobTitleService;
 
 @Controller
 public class JobTitleController {
