@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,10 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetms.models.User;
-import com.kindsonthegenius.fleetms.services.UserService;
-import com.kindsonthegenius.fleetms.services.CountryService;
-import com.kindsonthegenius.fleetms.services.UserService;
+import com.kindsonthegenius.fleetapp.models.User;
+import com.kindsonthegenius.fleetapp.services.CountryService;
+import com.kindsonthegenius.fleetapp.services.UserService;
 
 @Controller
 public class UserController {
