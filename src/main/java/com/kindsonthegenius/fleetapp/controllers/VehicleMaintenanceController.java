@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetms.models.VehicleMaintenance;
-import com.kindsonthegenius.fleetms.services.SupplierService;
-import com.kindsonthegenius.fleetms.services.VehicleMaintenanceService;
-import com.kindsonthegenius.fleetms.services.VehicleService;
+import com.kindsonthegenius.fleetapp.models.VehicleMaintenance;
+import com.kindsonthegenius.fleetapp.services.SupplierService;
+import com.kindsonthegenius.fleetapp.services.VehicleMaintenanceService;
+import com.kindsonthegenius.fleetapp.services.VehicleService;
 
 @Controller
 public class VehicleMaintenanceController {
