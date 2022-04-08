@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.kindsonthegenius.fleetms.models.Employee;
-import com.kindsonthegenius.fleetms.services.CountryService;
-import com.kindsonthegenius.fleetms.services.EmployeeService;
-import com.kindsonthegenius.fleetms.services.EmployeeTypeService;
-import com.kindsonthegenius.fleetms.services.JobTitleService;
-import com.kindsonthegenius.fleetms.services.StateService;
+import com.kindsonthegenius.fleetapp.models.Employee;
+import com.kindsonthegenius.fleetapp.services.CountryService;
+import com.kindsonthegenius.fleetapp.services.EmployeeService;
+import com.kindsonthegenius.fleetapp.services.EmployeeTypeService;
+import com.kindsonthegenius.fleetapp.services.JobTitleService;
+import com.kindsonthegenius.fleetapp.services.StateService;
 
 @Controller
 public class EmployeeController {
@@ -81,7 +81,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/employees/uploadPhoto", method=RequestMethod.POST, consumes=MediaType.MULTIPART_FORM_DATA_VALUE)
 	public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
-		File newFile = new File("D:\\SOLUTIONS\\fleetms\\uploads" + file.getOriginalFilename());
+		File newFile = new File("D:\\SOLUTIONS\\fleetapp\\uploads" + file.getOriginalFilename());
 		newFile.createNewFile();
 		FileOutputStream fout = new FileOutputStream(newFile);
 		fout.write(file.getBytes());
@@ -93,7 +93,7 @@ public class EmployeeController {
 	@PostMapping("/employees/uploadPhoto2")
 	public String uploadFile2(@RequestParam("file") MultipartFile file, Principal principal) 
 			throws IllegalStateException, IOException {
-			String baseDirectory = "D:\\SOLUTIONS\\fleetms\\src\\main\\resources\\static\\img\\photos\\" ;
+			String baseDirectory = "D:\\SOLUTIONS\\fleetapp\\src\\main\\resources\\static\\img\\photos\\" ;
 			file.transferTo(new File(baseDirectory + principal.getName() + ".jpg"));
 			return "redirect:/employees";
 	}
