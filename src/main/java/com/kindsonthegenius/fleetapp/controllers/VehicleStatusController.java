@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controller;
+package com.kindsonthegenius.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetms.models.VehicleStatus;
-import com.kindsonthegenius.fleetms.services.VehicleStatusService;
+import com.kindsonthegenius.fleetapp.models.VehicleStatus;
+import com.kindsonthegenius.fleetapp.services.VehicleStatusService;
 
 @Controller
 public class VehicleStatusController {
