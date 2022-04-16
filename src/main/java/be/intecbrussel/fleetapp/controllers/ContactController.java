@@ -1,7 +1,9 @@
-package com.kindsonthegenius.fleetapp.controllers;
+package be.intecbrussel.fleetapp.controllers;
 
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.services.ContactService;
+import be.intecbrussel.fleetapp.services.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,18 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetapp.models.Contact;
-import com.kindsonthegenius.fleetapp.services.ContactService;
-import com.kindsonthegenius.fleetapp.services.CountryService;
-import com.kindsonthegenius.fleetapp.services.EmployeeTypeService;
-import com.kindsonthegenius.fleetapp.services.JobTitleService;
-import com.kindsonthegenius.fleetapp.services.StateService;
+import be.intecbrussel.fleetapp.models.Contact;
+import be.intecbrussel.fleetapp.services.StateService;
 
 @Controller
 public class ContactController {
 	
 	@Autowired private StateService stateService;
-	@Autowired private CountryService countryService;	
+	@Autowired private CountryService countryService;
 	@Autowired private ContactService contactService;
 	
 	//Get All Contacts
