@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.models;
+package be.intecbrussel.fleetapp.models;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @MappedSuperclass
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class CommonObject extends com.kindsonthegenius.fleetapp.models.Auditable<String> {
+public class CommonObject extends Auditable<String> {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
