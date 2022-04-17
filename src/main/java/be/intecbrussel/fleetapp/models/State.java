@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.models;
+package be.intecbrussel.fleetapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

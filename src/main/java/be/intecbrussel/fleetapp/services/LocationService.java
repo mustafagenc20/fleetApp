@@ -1,13 +1,13 @@
-package com.kindsonthegenius.fleetapp.services;
+package be.intecbrussel.fleetapp.services;
 
 import java.util.List;
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.repositories.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kindsonthegenius.fleetapp.models.Location;
-import com.kindsonthegenius.fleetapp.repositories.LocationRepository;
+import be.intecbrussel.fleetapp.models.Location;
 
 
 @Service
