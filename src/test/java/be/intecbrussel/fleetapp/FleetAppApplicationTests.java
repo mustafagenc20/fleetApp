@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp;
+package be.intecbrussel.fleetapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

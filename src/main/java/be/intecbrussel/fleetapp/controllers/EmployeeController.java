@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controllers;
+package be.intecbrussel.fleetapp.controllers;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.security.Principal;
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.services.CountryService;
+import be.intecbrussel.fleetapp.services.EmployeeService;
+import be.intecbrussel.fleetapp.services.EmployeeTypeService;
+import be.intecbrussel.fleetapp.services.JobTitleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,12 +24,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.kindsonthegenius.fleetapp.models.Employee;
-import com.kindsonthegenius.fleetapp.services.CountryService;
-import com.kindsonthegenius.fleetapp.services.EmployeeService;
-import com.kindsonthegenius.fleetapp.services.EmployeeTypeService;
-import com.kindsonthegenius.fleetapp.services.JobTitleService;
-import com.kindsonthegenius.fleetapp.services.StateService;
+import be.intecbrussel.fleetapp.models.Employee;
+import be.intecbrussel.fleetapp.services.StateService;
 
 @Controller
 public class EmployeeController {
