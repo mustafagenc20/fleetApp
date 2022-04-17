@@ -1,8 +1,11 @@
-package com.kindsonthegenius.fleetapp.controllers;
+package be.intecbrussel.fleetapp.controllers;
 
 import java.util.List;
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.services.CountryService;
+import be.intecbrussel.fleetapp.services.LocationService;
+import be.intecbrussel.fleetapp.services.StateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,10 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetapp.models.Location;
-import com.kindsonthegenius.fleetapp.services.CountryService;
-import com.kindsonthegenius.fleetapp.services.LocationService;
-import com.kindsonthegenius.fleetapp.services.StateService;
+import be.intecbrussel.fleetapp.models.Location;
 
 @Controller
 @RequestMapping("/locations")
