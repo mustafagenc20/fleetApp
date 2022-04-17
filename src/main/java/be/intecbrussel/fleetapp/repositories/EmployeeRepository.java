@@ -1,11 +1,9 @@
-package com.kindsonthegenius.fleetapp.repositories;
-
-import java.util.Optional;
+package be.intecbrussel.fleetapp.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.kindsonthegenius.fleetapp.models.Employee;
+import be.intecbrussel.fleetapp.models.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
