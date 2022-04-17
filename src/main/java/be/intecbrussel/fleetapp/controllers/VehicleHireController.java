@@ -1,7 +1,11 @@
-package com.kindsonthegenius.fleetapp.controllers;
+package be.intecbrussel.fleetapp.controllers;
 
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.services.ClientService;
+import be.intecbrussel.fleetapp.services.LocationService;
+import be.intecbrussel.fleetapp.services.VehicleHireService;
+import be.intecbrussel.fleetapp.services.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,11 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetapp.models.VehicleHire;
-import com.kindsonthegenius.fleetapp.services.ClientService;
-import com.kindsonthegenius.fleetapp.services.LocationService;
-import com.kindsonthegenius.fleetapp.services.VehicleHireService;
-import com.kindsonthegenius.fleetapp.services.VehicleService;
+import be.intecbrussel.fleetapp.models.VehicleHire;
 
 @Controller
 public class VehicleHireController {
