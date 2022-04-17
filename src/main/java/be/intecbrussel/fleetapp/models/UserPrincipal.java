@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.models;
+package be.intecbrussel.fleetapp.models;
 
 import java.util.Collection;
 import java.util.Collections;
