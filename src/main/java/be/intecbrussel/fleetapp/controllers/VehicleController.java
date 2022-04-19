@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.controllers;
+package be.intecbrussel.fleetapp.controllers;
 
 import java.util.Optional;
 
@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kindsonthegenius.fleetapp.models.Vehicle;
-import com.kindsonthegenius.fleetapp.services.EmployeeService;
-import com.kindsonthegenius.fleetapp.services.LocationService;
-import com.kindsonthegenius.fleetapp.services.VehicleMakeService;
-import com.kindsonthegenius.fleetapp.services.VehicleModelService;
-import com.kindsonthegenius.fleetapp.services.VehicleService;
-import com.kindsonthegenius.fleetapp.services.VehicleStatusService;
-import com.kindsonthegenius.fleetapp.services.VehicleTypeService;
+import be.intecbrussel.fleetapp.models.Vehicle;
+import be.intecbrussel.fleetapp.services.EmployeeService;
+import be.intecbrussel.fleetapp.services.LocationService;
+import be.intecbrussel.fleetapp.services.VehicleMakeService;
+import be.intecbrussel.fleetapp.services.VehicleModelService;
+import be.intecbrussel.fleetapp.services.VehicleService;
+import be.intecbrussel.fleetapp.services.VehicleStatusService;
+import be.intecbrussel.fleetapp.services.VehicleTypeService;
 
 @Controller
 public class VehicleController {
