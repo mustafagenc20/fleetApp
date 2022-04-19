@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.models;
+package be.intecbrussel.fleetapp.models;
 
 import java.util.Date;
 
@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class VehicleMaintenance extends com.kindsonthegenius.fleetapp.models.Auditable<String> {
+public class VehicleMaintenance extends Auditable<String> {
 		
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
