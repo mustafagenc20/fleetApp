@@ -1,4 +1,4 @@
-package com.kindsonthegenius.fleetapp.models;
+package be.intecbrussel.fleetapp.models;
 
 import javax.persistence.Entity;
 
@@ -12,6 +12,6 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper=false)
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class VehicleType extends CommonObject {
+public class VehicleStatus extends CommonObject {
 
 }

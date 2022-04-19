@@ -1,13 +1,13 @@
-package com.kindsonthegenius.fleetapp.services;
+package be.intecbrussel.fleetapp.services;
 
 import java.util.List;
 import java.util.Optional;
 
+import be.intecbrussel.fleetapp.repositories.VehicleStatusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kindsonthegenius.fleetapp.models.VehicleStatus;
-import com.kindsonthegenius.fleetapp.repositories.VehicleStatusRepository;
+import be.intecbrussel.fleetapp.models.VehicleStatus;
 
 @Service
 public class VehicleStatusService {
